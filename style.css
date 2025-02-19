@@ -1,6 +1,6 @@
 .attribution { 
     font-size: 11px; 
-    text-align: center; 
+    text-align: center;
 }
 
 .attribution a { 
@@ -8,12 +8,14 @@
 }
 
 body{
+    display: flex;
+    flex-direction: column;
     background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 100%);
     font-family: "Inter", sans-serif;
     font-size: 14px;
     margin: auto;
-    padding: 5%;
+    height: 100vh;
 }
 
 .element{
@@ -22,23 +24,37 @@ body{
     align-items: center;
     background-color: hsl(0, 0%, 12%);
     margin: auto;
-    border-radius: 5%;
+    border-radius: 10px;
+    padding: 1%;
 }
 
 .element img{
     border-radius: 100%;
-    max-width: 15%;
+    max-width: 30%;
 }
 
 .element a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color:hsl(0, 0%, 100%);
-    width: 90%;
-    text-align: center;
-    margin-bottom: 10%;
-    border-radius: 5%;
+    width: 40vh;
+    min-height: 45px;
+    margin-bottom: 5%;
+    border-radius: 5px;
     background-color: hsl(0, 0%, 20%);
 }
 
+.element a:hover{
+    color: hsl(0, 0%, 8%);
+    background-color: hsl(75, 94%, 57%);
+}
+
 .place{
-    color:hsl(75, 94%, 57%);
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+}
+
+.quote{
+    padding: 5%;
 }
